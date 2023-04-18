@@ -1,0 +1,102 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 800px;
+    background: linear-gradient(rgba(143, 142, 146, 0.748) 30%, rgba(173, 165, 165, 0.667) 81%);
+    font-family: Raleway;
+}
+
+h1{
+    margin-bottom: 50px;
+    font-weight:100;
+    font-size: 50px;
+}
+
+.container{
+    box-shadow: 5px  5px 5px #dedede,
+                -5px -5px 5px #dedede,
+                5px 5px 5px #dedede,
+                -5px  5px 5px #dedede;
+    height: 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+
+}
+
+.container-button{
+    height: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+
+.button-plus, 
+.button-less{
+    width: 50px;
+    height: 50px;
+    color: black;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+ 
+
+.counter-zero{
+    font-size: 80px;
+    font-weight: 100;
+}
+
+.button-reset{
+    width: 100px;
+    height: 50px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Raleway;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+@media (min-width: 250px) and (max-width: 700px) {
+
+    h1{
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .container{
+        width: 70%;
+    }
+
+    .counter-zero{
+        font-size: 50px;
+    }
+
+    .button-less,.button-plus{
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    .button-reset{
+        width: 70px;
+        height: 45px;
+        margin-top: 0;
+        font-size: 15px;
+        font-weight: 200;
+    }
+  
+}
