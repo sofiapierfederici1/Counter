@@ -1,7 +1,5 @@
 # Counter
 
-# Counter
-
 ## Creating a counter with Javascript
 
 This project was developed for start2impact using only javascript for operation and creation of elements, and css for its graphics.
