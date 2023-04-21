@@ -36,26 +36,29 @@ container.appendChild(buttonReset);
 let contatore = 0;
 
 
-// contatore incrementa di 1
-buttonPlus.addEventListener("click", () => {
-    contatore++; 
-    document.querySelector(".counter-zero").innerHTML = contatore;
-});
-
-// contatore decrementa di 1
-buttonLess.addEventListener("click",() =>{
-    contatore--;
-    document.querySelector(".counter-zero").innerHTML = contatore;
-});
-
-//  contatore resetta 0
-buttonReset.addEventListener("click",() => {
-    contatore = 0;
-    document.querySelector(".counter-zero").innerHTML= contatore;
-});
 
 
+// evento per incrementare,diminuire e resettare contatore
+document.addEventListener("click",(event) => {
+    let target = event.target;
 
+     if (target == buttonPlus) {
+        contatore++;
+        document.querySelector(".counter-zero").innerHTML = contatore;
+    } 
+
+     else if (target == buttonLess) {
+        contatore --;
+        document.querySelector(".counter-zero").innerHTML = contatore;
+    } 
+
+     else if  (target == buttonReset){
+        contatore = 0;
+        document.querySelector(".counter-zero").innerHTML= contatore;
+    } 
+
+
+    });
 
 
 
